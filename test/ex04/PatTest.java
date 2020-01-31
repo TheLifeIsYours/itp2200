@@ -1,6 +1,7 @@
 package ex04;
 
 import ex04.PatternMatcher;
+import jdk.jfr.StackTrace;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -14,5 +15,10 @@ public class PatTest {
         int result = PatternMatcher.pat(subject, pattern);
         assertTrue(result != -1);
         //assertTrue( true ^ false); //Random XOR example
+    }
+
+    @Test
+    public  void test2() throws Exception {
+        assertTrue(true);
     }
 }
